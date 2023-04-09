@@ -4,18 +4,19 @@
 
 - 'DONT_TOUCH' attribute is used to prevent the synthesis tool from optimizing away a specific module, submodule, or signal.
 
-Examples:
-
+Example 1)
 ```verilog
 (* DONT_TOUCH = "TRUE" *) module test_module (
   ...
 );
 ```
 
+Example 2)
 ```verilog
 (* DONT_TOUCH = "TRUE" *) reg signal;
 ```
 
+Example 3)
 ```verilog
 module my_module (
     input [3:0] data_in,
